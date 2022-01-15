@@ -1,0 +1,252 @@
+/* common style */
+body{
+    font-family: 'Mukta', sans-serif;
+   font-family: 'Poppins', sans-serif;
+   font-family: 'Slabo 27px', serif;
+}
+.container{
+    width: 1200px;
+}
+.color{
+    color: gold;
+}
+
+/* header style */
+.main-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu ul li{
+    margin-right: 34px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* start-journey */
+.start-jurney{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.jurney-details {
+    width: 582px;
+    margin-left: 5.83em;
+
+}
+.jurney-details h2{
+    font-size: 52px;
+    font-weight: bold;
+}
+.jurney-details p{
+    font-size: 21px;
+    font-weight:600;
+    margin-top: -12px;
+}
+.jurney-details button a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+}
+.jurney-details button{
+    background: #E02C6D;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 41px;
+}
+.jurney-details button i{
+    color: white;
+}
+.jurney-image{
+    width: 440px;
+}
+hr{
+    width: 1032px;
+}
+/* logo style */
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5.83em;
+    margin-top: 23px;
+    margin-bottom: 22px;
+}
+/* popular collection style */
+.popular-section{
+    margin-top: 80px;
+}
+.popular-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 5.83em;
+    row-gap: 20px;
+
+}
+.collection{
+    width: 329px;
+    background-color:white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.collection-img img{
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 14px;
+    margin-top: 14px;
+}
+.collection-details{
+    margin-left: 14px;
+}
+.collection-details h3{
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: -19px;
+}
+.collection-details p{
+    width: 196px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.see-more{
+    float: right;
+    border: none;
+    margin-right: 34px;
+    margin-top: 30px;
+    background: none;
+}
+.see-more a{
+    text-decoration: none;
+    color: red;
+}
+/* zoom image style */
+.zoom-img{
+    width: 1200px;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+.zoom-img img{
+    transition: transform .9s ease-in-out;
+}
+.zoom-img img:hover{
+    transform: scale(.5) rotate(360deg);
+}
+.zoom-img h2{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+/* footer style */
+.footer{
+    background: #0a0826;
+    
+}
+.footer-area{
+    text-align: center;
+}
+.text-center{
+    margin-top: 20px;
+}
+.text-center h2{
+    color: white;
+    margin-bottom: -14px;
+    padding-top: 30px;
+}
+
+.text-center h5{
+    color:wheat;
+    margin-bottom: 12px;
+}
+.text-center h5{
+    color: wheat;
+}
+.text-center i{
+    color: green;
+    padding-bottom: 23px;
+}
+/* responsive style */
+/* mobile view */
+@media only screen and (max-width:688px) {
+    .menu{
+        display: none;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .start-jurney {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .jurney-details h2 {
+        font-size: 29px;
+        font-weight: bold;
+        margin-left: 0;
+    }
+    .jurney-details p {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: -12px;
+        width: 47%;
+    }
+    .jurney-image {
+        width: 63%;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .collections {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 5.83em;
+        row-gap: 20px;
+        justify-items: center;
+    }
+    .footer {
+        width: 1200px;
+    }
+    
+    .see-more {
+        float: right;
+        border: none;
+        margin-right: 484px;
+        background: none;
+        font-size: 35px;
+    }
+    
+}
+/* tap view */
+@media  only screen and (max-width:992px){
+    .collections {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 5.83em;
+        row-gap: 20px;
+    }
+    .footer{
+        width: 1200px;
+    }
+    
+}
